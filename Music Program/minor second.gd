@@ -6,4 +6,5 @@ func _input_event(_viewport, event, _shape_idx):
 	and event.is_pressed():
 		self.on_click()
 func on_click():
-	get_tree().change_scene_to_file("res://version history.tscn")
+	$"../../AudioStreamPlayer".pitch_scale = 1.0595
+	$"../../AudioStreamPlayer".play()

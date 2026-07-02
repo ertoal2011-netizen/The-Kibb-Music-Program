@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxnxs0rj3v1rt"]
+[gd_scene load_steps=3 format=3 uid="uid://dxnxs0rj3v1rt"]
 
-[ext_resource type="Script" uid="uid://bojbxulfnmj6m" path="res://button.gd" id="1_vj3y0"]
+[ext_resource type="Script" uid="uid://cj7xttwq2cpxr" path="res://GoToMainScene.gd" id="1_3vun2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vun2"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
 
 [node name="Node2D" type="Node2D"]
 
@@ -8,11 +11,20 @@
 offset_right = 1150.0
 offset_bottom = 647.0
 theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
-text = "Alpha 1 - 6/30/26
-		- Project created 
-		- Added mouse controls for one octave
-		- Added basic MIDI controls for two octaves
-		- Added velocity"
+theme_override_styles/read_only = SubResource("StyleBoxFlat_3vun2")
+text = " Alpha 2 - 7/2/26
+	- Edited placeholder graphics, tidying up position and colors.
+	- Added complete keyboard controls over two octaves.
+	- Extended on-screen piano.
+	- Gave mouse eight octaves of control.
+	- Added a screen to show connected MIDI inputs. 
+ Alpha 1 - 7/1/26
+	- Added MIDI code foundation.
+	- Added two octaves of MIDI control.
+	- Added one octave of mouse control.
+	- Added placeholder sound and graphics.
+	- Added velocity.
+	- Added Mac support"
 editable = false
 virtual_keyboard_enabled = false
 
@@ -23,6 +35,6 @@ offset_right = 1095.0
 offset_bottom = 611.0
 theme_override_colors/icon_hover_color = Color(0.666569, 0.666569, 0.666569, 1)
 text = "Click to return"
-script = ExtResource("1_vj3y0")
+script = ExtResource("1_3vun2")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
