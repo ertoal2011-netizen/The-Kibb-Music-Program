@@ -2,8 +2,8 @@ Hello!
 
 (I'm new to coding, github, and ReadMes, so i might be a little unconventional)
 
-This is my audio program! 
-At the moment it has MIDI control for two octaves, mouse control for eight octaves, and keyboard control for eight octaves. 
+This is my monophonic sampler! 
+It has full keyboard, mouse, and MIDI control over eight octaves.
 Feel free to use freely or redistribute, I don't really care :D 
 Have fun!
 
