@@ -1,4 +1,4 @@
-extends TextEdit
+extends RichTextLabel
 
 func _process(_delta) -> void:
-	$".".text = "mouse octave: " + str(int(log(Globaltest.mouseoctave)/log(2) + 5))
+	$".".text = str(int(log(Globaltest.mouseoctave)/log(2) + 5))

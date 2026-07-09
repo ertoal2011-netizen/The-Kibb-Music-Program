@@ -1,7 +1,7 @@
-extends TextEdit
+extends RichTextLabel
 
 func _process(_delta: float) -> void:
 	if Globaltest.release < 10.0:
-		$".".text = "release: " + str(Globaltest.release) + " secs"
+		$".".text = str(Globaltest.release) + " secs"
 	else:
-		$".".text = "release: inf"
+		$".".text = "inf"

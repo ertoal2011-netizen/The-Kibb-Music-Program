@@ -1,7 +1,7 @@
-extends TextEdit
+extends RichTextLabel
 
 func _process(_delta: float) -> void:
 	if str(OS.get_connected_midi_inputs()) == "[]":
-		$".".text = "no midi keyboard is connected"
+		$".".text = " No MIDI Keyboard Detected"
 	else:
-		$".".text = "connected: " + str(OS.get_connected_midi_inputs())
+		$".".text = " MIDI Connected: " + str(OS.get_connected_midi_inputs())

@@ -9,6 +9,7 @@ func on_click():
 	$"../../../AudioStreamPlayer".pitch_scale = 1.6818 * 2 * Globaltest.mouseoctave
 	Globaltest.lastpressed = "mouse"
 	Globaltest.releasehelper = "standstill"
+	Globaltest.keydown = 81 + 12 * log(Globaltest.mouseoctave)/log(2)
 	if Globaltest.attack > 0:
 		$"../../../AudioStreamPlayer".volume_db = -80
 		Globaltest.attackhelper = "attack"
@@ -22,6 +23,8 @@ var release:String = "deactivate"
 func _process(_delta: float) -> void:
 	if release == "activate":
 		if Input.is_action_just_released("leftbutton") and Globaltest.lastpressed == "mouse":
+			if Globaltest.lastpressed == "mouse":
+				Globaltest.keydown = 0
 			Globaltest.releasehelper = "subtract"
 			release = "deactivate"
 	

@@ -10,12 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Audio Program"
+config/name="K1 Monophonic Sampler"
 run/main_scene="uid://bumvo02lr1dbf"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 run/max_fps=240
-config/icon="uid://dcqu25b1nmdmr"
-config/windows_native_icon="res://appicon.ico"
+config/icon="uid://byi8vqabqytsk"
 
 [autoload]
 
@@ -23,7 +22,10 @@ Globaltest="*res://globaltest.gd"
 
 [display]
 
+window/size/viewport_width=2304
+window/size/viewport_height=1296
 window/stretch/mode="viewport"
+window/stretch/scale=2.0
 
 [editor_plugins]
 
@@ -221,6 +223,7 @@ p={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
